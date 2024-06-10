@@ -21,9 +21,11 @@ int main()
                 min = j;   
             }
         }
-        if(min!=0)
+        if(min!=i)
         {
-            swap(arr[min],arr[i]);
+            int temp = arr[min];
+            arr[min] = arr[i];
+            arr[i]= temp;
         }
     }
     for(int i=0;i<n;i++)
